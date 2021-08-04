@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Practicando con bootstrap" />
+    <meta
+      name="keywords"
+      content="herramientas de bootstrap, tablas, listas, botones"
+    />
+    <meta name="author" content="Luciano Navarro" />
+    <!-- bootstrap desde mi carpeta -->
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/style.css" />
+    <!-- fontawesome -->
+    <script src="https://kit.fontawesome.com/a83f77fa83.js" crossorigin="anonymous"></script>
+    <title>Panaderia Cocu</title>
+  </head>
+  <body>
+    <header>
+      <nav class="navbar navbar-expand-md navbar-dark bg-dark">
+        <div class="container">
+          <div>
+            <a class="navbar-brand" href="index.html">
+              <img
+                src="../img/cocu_logo-450.png"
+                alt="Logo panaderia"
+                width="110"
+              />
+            </a>
+          </div>
+          <div class="d-flex me">
+            <a class="navbar-brand" href="../index.html">Inicio</a>
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarPanaderia"
+              aria-controls="navbarPanaderia"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse mx-2 navbar-collapse" id="navbarPanaderia">
+              <ul class="navbar-nav">
+                <li class="nav-item">
+                  <a class="nav-link" href="../pages/historia.html">Historia</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="../pages/Producto.html">Producto</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href='../pages/Contacto.html'>Contacto</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main>
+        <nav aria-label="breadcrumb">
+            <div class="container">
+            <ol class="breadcrumb">
+              <li class="breadcrumb-item"><a href="../index.html">Inicio</a></li>
+              <li class="breadcrumb-item active" aria-current="page">Producto</li>
+            </ol>
+            </div>
+          </nav>
+          <section class="container">
+              <h1 class="display-2 text-center">Galeria de productos</h1>
+              <hr>
+              <article class="row">
+              <div class="col-sm-12 col-md-4 col-lg-3">
+                    <div class="card">
+                        <img src="../img/productos/Brioche-larga-oscura_00059_portfolio1.jpg" alt="Pan brioche">
+                        <div class="card-body">
+                            <h5 class="card-title">Pan Brioche <span class="badge bg-info text-dark">Nuevo</span></h5>
+                            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias ipsum tenetur culpa, nemo optio ut.</p>
+                            <button class="btn btn-primary" type="button" data-bs-target="#modalProducto" data-bs-toggle="modal">Ver más</button>
+                        </div>
+                    </div>
+              </div>
+              <div class="col-sm-12 col-md-4 col-lg-3">
+                  <div class="card">
+                      <img src="../img/productos/Croissant_00018_portfolio1.jpg" alt="Croissant">
+                      <div class="card-body">
+                          <h5 class="card-title">Croissant <span class="badge bg-info text-dark">Nuevo</span></h5>
+                          <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias ipsum tenetur culpa, nemo optio ut.</p>
+                          <button class="btn btn-primary" type="button" data-bs-target="#modalProducto1" data-bs-toggle="modal" >Ver más</button>
+                      </div>
+                  </div>
+                </div>
+              <div class="col-sm-12 col-md-4 col-lg-3">
+                  <div class="card">
+                      <img src="../img/productos/Eclair_00118_portfolio1.jpg" alt="Eclair">
+                      <div class="card-body">
+                          <h5 class="card-title">Eclair <span class="badge bg-info text-dark">Nuevo</span></h5>
+                          <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias ipsum tenetur culpa, nemo optio ut.</p>
+                          <button class="btn btn-primary" type="button" data-bs-target="#modalProducto1" data-bs-toggle="modal" >Ver más</button>
+                      </div>
+                  </div>
+                </div>
+                <div class="col-sm-12 col-md-4 col-lg-3">
+                  <div class="card">
+                      <img src="../img/productos/Pan-de-miga_00195_portfolio1.jpg" alt="Pan de miga">
+                      <div class="card-body">
+                          <h5 class="card-title">Pan de miga <span class="badge bg-info text-dark">Nuevo</span></h5>
+                          <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias ipsum tenetur culpa, nemo optio ut.</p>
+                          <button class="btn btn-primary" type="button" data-bs-target="#modalProducto1" data-bs-toggle="modal" >Ver más</button>
+                      </div>
+                  </div>
+                </div>
+                <div class="col-sm-12 col-md-4 col-lg-3">
+                  <div class="card">
+                      <img src="../img/productos/Pan-de-uva-corte_00058_portfolio1.jpg" alt="Pan de uva">
+                      <div class="card-body">
+                          <h5 class="card-title">Pan de uva <span class="badge bg-info text-dark">Nuevo</span></h5>
+                          <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias ipsum tenetur culpa, nemo optio ut.</p>
+                          <button class="btn btn-primary" type="button" data-bs-target="#modalProducto1" data-bs-toggle="modal" >Ver más</button>
+                      </div>
+                  </div>
+                </div>
+              </article>
+          </section>
+    </main>
+    <!-- Modal de producto Pan Brioche -->
+    <div class="modal fade" id="modalProducto" tabindex="-1" aria-labelledby="modalProducto1Labe" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="modalProductoLabel">Pan Brioche</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body text-center">
+            <img src="../img/productos/Brioche-larga-oscura_00059_portfolio1.jpg" alt="Brioche" class="w-100">
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-primary">Save changes</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Modal de producto Crossaint -->
+    <div class="modal fade" id="modalProducto1" tabindex="-1" aria-labelledby="modalProducto1Label" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="modalProducto1Label">Croissant</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body text-center">
+            <img src="../img/productos/Croissant_00018_portfolio1.jpg" alt="croissant" class="w-100">
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-primary">Save changes</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Modal de producto Eclair -->
+    <div class="modal fade" id="modalProducto2" tabindex="-1" aria-labelledby="modalProducto2Label" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="modalProducto2Label">Croissant</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body text-center">
+            <img src="../img/productos/Eclair_00118_portfolio1.jpg" alt="Eclair" class="w-100">
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-primary">Save changes</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer class="bg-dark text-white">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-12 col-md-4 col-lg-4 centrado">
+            <a class="navbar-brand" href="index.html">
+              <img
+                src="../img/cocu_logo-450.png"
+                alt="Logo panaderia"
+                width="120"/></a>
+           </div>
+          <div class="col-sm-12 col-md-4 col-lg-4">
+            <h3>Horarios de atencion:</h3>
+           <p>• Lunes a viernes: 09hs-18hs</p>
+           <p>• Sabado, domingo y feriados: 09hs-14hs</p>
+          </div>
+          <div class="col-sm-12 col-md-4 col-lg-4">
+           <p> Seguinos en nuestras redes: </p>
+           <div class="centrado">
+           <a href="#" class="text-white">
+           <i class="fab fa-facebook-square mx-3 fa-2x"></i></a>
+           <a href="#" class="text-white">
+           <i class="fab fa-twitter-square mx-3 fa-2x"></i></a>
+           <a href="#" class="text-white">
+           <i class="fab fa-instagram-square mx-3 fa-2x"></i></a>
+          </div>
+          </div>
+    </div>
+    </footer>
+    <script src="../js/bootstrap.min.js"></script>
+  </body>
+</html>

@@ -1,0 +1,10 @@
+@media all and (max-width: 576px) {
+    .img-resp {
+        height: 260px;
+        object-fit: cover;
+    }
+     
+    .centrado {
+        text-align: center;
+    }
+}
