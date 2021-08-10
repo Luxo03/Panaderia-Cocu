@@ -1,4 +1,5 @@
 {
+<<<<<<< HEAD
     "workbench.colorCustomizations": {
         "activityBar.activeBackground": "#3399ff",
         "activityBar.activeBorder": "#bf0060",
@@ -16,4 +17,6 @@
         "titleBar.inactiveForeground": "#e7e7e799"
     },
     "peacock.color": "#007fff"
+=======
+>>>>>>> paginaProducto
 }
