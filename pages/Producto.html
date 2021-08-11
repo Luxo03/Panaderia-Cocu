@@ -22,7 +22,7 @@
       <nav class="navbar navbar-expand-md navbar-dark bg-dark">
         <div class="container">
           <div>
-            <a class="navbar-brand" href="index.html">
+            <a class="navbar-brand" href="../index.html">
               <img
                 src="../img/cocu_logo-450.png"
                 alt="Logo panaderia"
@@ -74,76 +74,58 @@
               <hr>
               <article class="row">
               <div class="col-sm-12 col-md-4 col-lg-3">
-                    <div class="card">
+                    <div class="card text-center">
                         <img src="../img/productos/Brioche-larga-oscura_00059_portfolio1.jpg" alt="Pan brioche">
                         <div class="card-body">
                             <h5 class="card-title">Pan Brioche <span class="badge bg-info text-dark">Nuevo</span></h5>
                             <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias ipsum tenetur culpa, nemo optio ut.</p>
-                            <button class="btn btn-primary" type="button" data-bs-target="#modalProducto" data-bs-toggle="modal">Ver más</button>
+                            <a href="../pages/detalleProducto.html" class="btn btn-primary" type="button" data-bs-target="#modalProducto" data-bs-toggle="modalProducto">Ver más</a>
                         </div>
                     </div>
               </div>
               <div class="col-sm-12 col-md-4 col-lg-3">
-                  <div class="card">
+                  <div class="card text-center">
                       <img src="../img/productos/Croissant_00018_portfolio1.jpg" alt="Croissant">
                       <div class="card-body">
                           <h5 class="card-title">Croissant <span class="badge bg-info text-dark">Nuevo</span></h5>
                           <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias ipsum tenetur culpa, nemo optio ut.</p>
-                          <button class="btn btn-primary" type="button" data-bs-target="#modalProducto1" data-bs-toggle="modal" >Ver más</button>
+                          <button class="btn btn-primary" type="button" data-bs-target="#modalProducto1" data-bs-toggle="modal" c>Ver más</button>
                       </div>
                   </div>
                 </div>
               <div class="col-sm-12 col-md-4 col-lg-3">
-                  <div class="card">
+                  <div class="card text-center">
                       <img src="../img/productos/Eclair_00118_portfolio1.jpg" alt="Eclair">
                       <div class="card-body">
                           <h5 class="card-title">Eclair <span class="badge bg-info text-dark">Nuevo</span></h5>
                           <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias ipsum tenetur culpa, nemo optio ut.</p>
-                          <button class="btn btn-primary" type="button" data-bs-target="#modalProducto1" data-bs-toggle="modal" >Ver más</button>
+                          <button class="btn btn-primary" type="button" data-bs-target="#modalProducto2" data-bs-toggle="modal" >Ver más</button>
                       </div>
                   </div>
                 </div>
                 <div class="col-sm-12 col-md-4 col-lg-3">
-                  <div class="card">
+                  <div class="card text-center">
                       <img src="../img/productos/Pan-de-miga_00195_portfolio1.jpg" alt="Pan de miga">
                       <div class="card-body">
                           <h5 class="card-title">Pan de miga <span class="badge bg-info text-dark">Nuevo</span></h5>
                           <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias ipsum tenetur culpa, nemo optio ut.</p>
-                          <button class="btn btn-primary" type="button" data-bs-target="#modalProducto1" data-bs-toggle="modal" >Ver más</button>
+                          <button class="btn btn-primary" type="button" data-bs-target="#" data-bs-toggle="modal" >Ver más</button>
                       </div>
                   </div>
                 </div>
                 <div class="col-sm-12 col-md-4 col-lg-3">
-                  <div class="card">
+                  <div class="card text-center">
                       <img src="../img/productos/Pan-de-uva-corte_00058_portfolio1.jpg" alt="Pan de uva">
                       <div class="card-body">
                           <h5 class="card-title">Pan de uva <span class="badge bg-info text-dark">Nuevo</span></h5>
                           <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias ipsum tenetur culpa, nemo optio ut.</p>
-                          <button class="btn btn-primary" type="button" data-bs-target="#modalProducto1" data-bs-toggle="modal" >Ver más</button>
+                          <button class="btn btn-primary" type="button" data-bs-target="#" data-bs-toggle="modal" >Ver más</button>
                       </div>
                   </div>
                 </div>
               </article>
           </section>
     </main>
-    <!-- Modal de producto Pan Brioche -->
-    <div class="modal fade" id="modalProducto" tabindex="-1" aria-labelledby="modalProducto1Labe" aria-hidden="true">
-      <div class="modal-dialog">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h5 class="modal-title" id="modalProductoLabel">Pan Brioche</h5>
-            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-          </div>
-          <div class="modal-body text-center">
-            <img src="../img/productos/Brioche-larga-oscura_00059_portfolio1.jpg" alt="Brioche" class="w-100">
-          </div>
-          <div class="modal-footer">
-            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-            <button type="button" class="btn btn-primary">Save changes</button>
-          </div>
-        </div>
-      </div>
-    </div>
     <!-- Modal de producto Crossaint -->
     <div class="modal fade" id="modalProducto1" tabindex="-1" aria-labelledby="modalProducto1Label" aria-hidden="true">
       <div class="modal-dialog">
@@ -156,8 +138,7 @@
             <img src="../img/productos/Croissant_00018_portfolio1.jpg" alt="croissant" class="w-100">
           </div>
           <div class="modal-footer">
-            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-            <button type="button" class="btn btn-primary">Save changes</button>
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
           </div>
         </div>
       </div>
@@ -174,8 +155,7 @@
             <img src="../img/productos/Eclair_00118_portfolio1.jpg" alt="Eclair" class="w-100">
           </div>
           <div class="modal-footer">
-            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-            <button type="button" class="btn btn-primary">Save changes</button>
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
           </div>
         </div>
       </div>
